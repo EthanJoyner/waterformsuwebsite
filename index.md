@@ -6,10 +6,11 @@ layout: default
         <h3 class="title">Barnabei Adventure Rental</h3>
     </div>
     <div class="home-container" id="home-video">
-        <video autoplay muted loop>
+        <!-- <video autoplay muted loop>
             <source src="./assets/img/sea-lions.mov" type="video/mov">
             Your browser does not support the video tag.
-        </video>
+        </video> -->
+        <img src="https://images.unsplash.com/photo-1497900304864-273dfb3aae33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"/>
     </div>
     <div class="home-container" id="home-reviews">
         <p>Review section to be added to.</p>
