@@ -14,6 +14,8 @@ p {
 
 #home-background {
   background-image: url("../img/fire.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
   position: fixed; }
@@ -35,7 +37,7 @@ p {
       margin: 0;
       font-size: 4em;
       color: black; }
-  #home-container #home-video {
+  #home-container #home-video video {
     width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
