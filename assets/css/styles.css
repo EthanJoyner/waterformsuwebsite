@@ -13,31 +13,48 @@ p {
   padding: 0; }
 
 #home-background {
-  background-image: url("../img/fire.jpg");
+  background-image: url("../img/cliff.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
   position: fixed; }
 
-#home-container {
-  margin: 40px;
+.home-container {
+  margin: 0 40px;
   padding: 0;
-  border-radius: 10px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  color: white; }
-  #home-container #home-title {
+  color: ghostwhite; }
+
+#home-title {
+  margin-top: 40px;
+  padding: 0;
+  border-radius: 10px 10px 0 0;
+  mix-blend-mode: lighten; }
+  #home-title .title {
+    padding: 20px;
     margin: 0;
-    padding: 0;
-    background-color: rgba(160, 160, 160, 0.8);
-    border-radius: 10px 10px 0 0; }
-    #home-container #home-title .title {
-      padding: 20px;
-      margin: 0;
-      font-size: 4em;
-      color: black; }
-  #home-container #home-video video {
-    width: 100%; }
+    font-size: 4em;
+    background: ghostwhite;
+    color: black;
+    border-radius: 12px 12px 0 0; }
+
+#home-video video {
+  width: 100%; }
+
+#home-features p {
+  color: white;
+  padding: 20px; }
+
+#home-footer {
+  border-radius: 0 0 10px 10px; }
+  #home-footer p {
+    padding: 20px;
+    margin: 0;
+    font-size: 2em;
+    color: grey;
+    background: #f0f0f0;
+    border-radius: 0 0 14px 14px; }
 
 /*# sourceMappingURL=styles.css.map */
