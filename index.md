@@ -8,7 +8,7 @@ layout: default
         </div>
         <div id="home-video">
             <video autoplay controls muted loop>
-                <source src="/assets/img/sea-lions.mov" type="video/mov">
+                <source src="./assets/img/sea-lions.mov" type="video/mov">
                 Your browser does not support the video tag.
             </video>
         <div>
