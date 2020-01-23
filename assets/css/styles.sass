@@ -8,7 +8,7 @@ body
     margin: 0
     padding: 0
 
-h1, h2, h3, h4, h5, h6
+// h1, h2, h3, h4, h5, h6
 
 p
     font-size: 1em
@@ -19,8 +19,9 @@ p
     display: none
 
 #home-background
-    background-image: url("../img/cliff.jpg")
+    background-image: url("../img/sunset.jpg")
     background-size: cover
+    background-position: center
     background-repeat: no-repeat
     height: 100vh
     width: 100vw
@@ -29,14 +30,16 @@ p
 
 .home-container
     position: relative
-    margin: 0 40px
+    width: 55rem
+    max-width: calc(100% - 6rem)
+    margin: 0 auto
     padding: 0
     backdrop-filter: blur(10px)
     -webkit-backdrop-filter: blur(10px)
     color: ghostwhite
 
 #home-title
-    margin-top: 40px
+    margin-top: 3rem
     padding: 0
     border-radius: 10px 10px 0 0
     mix-blend-mode: lighten
@@ -62,6 +65,7 @@ p
         padding: 0
 
 #home-features
+    background: rgba(30, 30, 30, 0.6)
 
     p
         color: ghostwhite
@@ -74,11 +78,11 @@ p
     p
         padding: 20px
 
-#home-contact
+// #home-contact
 
 #home-footer
     border-radius: 0 0 10px 10px
-    margin-bottom: 40px
+    margin-bottom: 3rem
 
     p
         padding: 20px
