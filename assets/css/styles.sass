@@ -11,9 +11,12 @@ body
 h1, h2, h3, h4, h5, h6
 
 p
-    font-size: 2em
+    font-size: 1em
     margin: 0
     padding: 0
+
+::-webkit-scrollbar
+    display: none
 
 #home-background
     background-image: url("../img/cliff.jpg")
@@ -22,8 +25,10 @@ p
     height: 100vh
     width: 100vw
     position: fixed
+    overflow: scroll
 
 .home-container
+    position: relative
     margin: 0 40px
     padding: 0
     backdrop-filter: blur(10px)
@@ -39,7 +44,7 @@ p
     .title
         padding: 20px
         margin: 0
-        font-size: 4em
+        font-size: 2em
         background: ghostwhite
         color: black
         border-radius: 12px 12px 0 0
@@ -55,16 +60,21 @@ p
         padding: 20px
 
 #home-reviews
+    background: white
+    color: grey
+
+    p
+        padding: 20px
 
 #home-contact
 
 #home-footer
     border-radius: 0 0 10px 10px
+    margin-bottom: 40px
 
     p
         padding: 20px
         margin: 0
-        font-size: 2em
         color: grey
         background: rgb(240, 240, 240)
         border-radius: 0 0 14px 14px
