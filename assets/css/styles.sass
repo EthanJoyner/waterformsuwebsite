@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap')
 
-$theme-light: ghostwhite
+$theme-primary: #607C58
+$theme-secondary: #92A789
+$theme-tertiary: #F1CFC8
+$theme-light: #F4F4F4
 $theme-dark: rgb(50, 50, 50)
-$light-grad-back: linear-gradient(96deg, ghostwhite, silver)
+$light-grad-back: linear-gradient(96deg, $theme-tertiary, $theme-secondary)
+$light-grad-back-2: linear-gradient(177deg, $theme-tertiary, $theme-secondary)
 
 
 html
@@ -41,7 +45,7 @@ p
     padding: 0
     backdrop-filter: blur(10px)
     -webkit-backdrop-filter: blur(10px)
-    color: ghostwhite
+    color: $theme-tertiary
 
 #home-title
     margin-top: 2rem
@@ -53,7 +57,7 @@ p
         margin: 0
         font-size: 2em
         background: $light-grad-back
-        color: $theme-dark
+        color: $theme-primary
         border-radius: 10px 10px 0 0
 
 #home-video
@@ -69,8 +73,8 @@ p
         padding: 0
 
 #home-about
-    background: $light-grad-back
-    color: $theme-dark
+    background: $light-grad-back-2
+    color: $theme-primary
 
 #home-features
     display: flex
@@ -96,7 +100,7 @@ p
 
 #home-reviews
     background: $light-grad-back
-    color: $theme-dark
+    color: $theme-primary
 
 #home-contact
     display: flex
@@ -113,8 +117,8 @@ p
 
     p
         margin: 0
-        color: $theme-dark
-        background: linear-gradient(96deg, ghostwhite, silver)
+        color: $theme-primary
+        background: $light-grad-back
         border-radius: 0 0 10px 10px
 
 .section-title

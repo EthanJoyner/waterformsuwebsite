@@ -46,12 +46,15 @@ layout: default
         <h3 class="section-title">Get in Touch</h3>
         <div class="home-contact-section">
             <p>Email</p>
+            <p>barental@gmail.com</p>
         </div>
         <div class="home-contact-section">
             <p>Address</p>
+            <p>1 Patriots Way<br>Boston, MA 12345</p>
         </div>
         <div class="home-contact-section">
             <p>Phone</p>
+            <p>(123) - 456 - 7890</p>
         </div>
     </div>
     <div class="home-container" id="home-footer">
