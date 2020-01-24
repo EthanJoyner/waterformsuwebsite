@@ -8,9 +8,9 @@ body {
   padding: 0; }
 
 p {
-  font-size: 1em;
+  font-size: 1rem;
   margin: 0;
-  padding: 0; }
+  padding: 20px; }
 
 ::-webkit-scrollbar {
   display: none; }
@@ -20,15 +20,15 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   position: fixed;
   overflow: scroll; }
 
 .home-container {
   position: relative;
   width: 55rem;
-  max-width: calc(100% - 6rem);
+  max-width: calc(100% - 4rem);
   margin: 0 auto;
   padding: 0;
   backdrop-filter: blur(10px);
@@ -36,16 +36,15 @@ p {
   color: ghostwhite; }
 
 #home-title {
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 0;
-  border-radius: 10px 10px 0 0;
-  mix-blend-mode: lighten; }
+  border-radius: 10px 10px 0 0; }
   #home-title .title {
     padding: 20px;
     margin: 0;
     font-size: 2em;
     background: linear-gradient(96deg, ghostwhite, silver);
-    color: black;
+    color: #323232;
     border-radius: 10px 10px 0 0; }
 
 #home-video {
@@ -58,26 +57,51 @@ p {
     margin: 0;
     padding: 0; }
 
+#home-about {
+  background: linear-gradient(96deg, ghostwhite, silver);
+  color: #323232; }
+
 #home-features {
+  display: flex;
+  flex-flow: wrap;
   background: rgba(30, 30, 30, 0.6); }
-  #home-features p {
-    color: ghostwhite;
-    padding: 20px; }
+  #home-features .home-features-left {
+    flex: 0 0 50%; }
+  #home-features .home-features-right {
+    flex: 0 0 50%; }
+  #home-features .home-features-center {
+    flex: 0 0 100%; }
+  #home-features .home-features-colored {
+    background: linear-gradient(96deg, ghostwhite, silver);
+    color: #323232; }
+  #home-features img {
+    display: block;
+    width: 100%; }
 
 #home-reviews {
   background: linear-gradient(96deg, ghostwhite, silver);
-  color: grey; }
-  #home-reviews p {
-    padding: 20px; }
+  color: #323232; }
+
+#home-contact {
+  display: flex;
+  flex-flow: wrap;
+  text-align: center; }
+  #home-contact .home-contact-section {
+    flex: 0 0 33%; }
 
 #home-footer {
   border-radius: 0 0 10px 10px;
-  margin-bottom: 3rem; }
+  margin-bottom: 6rem; }
   #home-footer p {
-    padding: 20px;
     margin: 0;
-    color: grey;
+    color: #323232;
     background: linear-gradient(96deg, ghostwhite, silver);
     border-radius: 0 0 10px 10px; }
+
+.section-title {
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
