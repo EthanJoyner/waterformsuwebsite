@@ -33,7 +33,7 @@ p {
   padding: 0;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  color: #F1CFC8; }
+  color: #F1DDC5; }
 
 #home-title {
   margin-top: 2rem;
@@ -43,8 +43,8 @@ p {
     padding: 20px;
     margin: 0;
     font-size: 2em;
-    background: linear-gradient(96deg, #F1CFC8, #92A789);
-    color: #607C58;
+    background: linear-gradient(96deg, white, #F1DDC5);
+    color: black;
     border-radius: 10px 10px 0 0; }
 
 #home-video {
@@ -58,8 +58,8 @@ p {
     padding: 0; }
 
 #home-about {
-  background: linear-gradient(177deg, #F1CFC8, #92A789);
-  color: #607C58; }
+  background: linear-gradient(177deg, #F1DDC5, white);
+  color: black; }
 
 #home-features {
   display: flex;
@@ -72,15 +72,15 @@ p {
   #home-features .home-features-center {
     flex: 0 0 100%; }
   #home-features .home-features-colored {
-    background: linear-gradient(96deg, #F1CFC8, #92A789);
+    background: linear-gradient(96deg, white, #F1DDC5);
     color: #323232; }
   #home-features img {
     display: block;
     width: 100%; }
 
 #home-reviews {
-  background: linear-gradient(96deg, #F1CFC8, #92A789);
-  color: #607C58; }
+  background: linear-gradient(96deg, white, #F1DDC5);
+  color: black; }
 
 #home-contact {
   display: flex;
@@ -94,8 +94,8 @@ p {
   margin-bottom: 6rem; }
   #home-footer p {
     margin: 0;
-    color: #607C58;
-    background: linear-gradient(96deg, #F1CFC8, #92A789);
+    color: black;
+    background: linear-gradient(96deg, white, #F1DDC5);
     border-radius: 0 0 10px 10px; }
 
 .section-title {
