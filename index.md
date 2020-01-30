@@ -2,14 +2,16 @@
 layout: default
 ---
 <div id="home-background">
+    <div id="home-background-overlay">
+    </div>
     <div class="home-container" id="home-title">
-        <h3 class="title">Barnabei Adventure Rental</h3>
+        <h3 class="title">BARNABEI ADVENTURE RENTAL</h3>
     </div>
     <div class="home-container" id="home-video">
-        <!-- <video autoplay muted loop>
+        <video autoplay muted loop>
             <source src="./assets/img/sea-lions.mov" type="video/mov">
             Your browser does not support the video tag.
-        </video> -->
+        </video>
         <img src="./assets/img/parked.jpg"/>
     </div>
     <div class="home-container" id="home-about">
