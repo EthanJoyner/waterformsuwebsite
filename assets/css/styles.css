@@ -62,9 +62,11 @@ p {
     border-radius: 10px 10px 0 0; }
 
 #home-video {
-  padding: 0; }
+  padding: 0;
+  display: block; }
   #home-video video {
-    width: 100%; }
+    width: 100%;
+    display: block; }
   #home-video img {
     display: block;
     width: 100%;

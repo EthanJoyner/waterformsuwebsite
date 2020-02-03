@@ -9,10 +9,10 @@ layout: default
     </div>
     <div class="home-container" id="home-video">
         <video autoplay muted loop>
-            <source src="./assets/img/sea-lions.mov" type="video/mov">
+            <source src="./assets/img/trailer.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <img src="./assets/img/parked.jpg"/>
+        <!-- <img src="./assets/img/parked.jpg"/> -->
     </div>
     <div class="home-container" id="home-about">
         <h3 class="section-title">About</h3>
