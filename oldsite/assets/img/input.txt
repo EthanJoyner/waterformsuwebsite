@@ -1,0 +1,5 @@
+file 'trailer-1.mp4'
+file 'trailer-3.mp4'
+
+
+# ffmpeg -f concat -safe 0 -i input.txt -codec copy output.mp4

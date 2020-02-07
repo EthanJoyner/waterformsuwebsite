@@ -2,122 +2,89 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
 html {
   font-family: "Quicksand", sans-serif;
-  width: 100%; }
+  width: 100%;
+  scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: #323232; }
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 4px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #F4F4F4;
+  margin: 0;
+  padding: 0; }
 
 p {
   font-size: 1rem;
   margin: 0;
   padding: 20px;
   letter-spacing: 1.5px;
-  word-spacing: 2px; }
+  word-spacing: 2px;
+  color: #F4F4F4; }
 
-::-webkit-scrollbar {
-  display: none; }
+a {
+  text-decoration: none;
+  color: #323232; }
 
-#home-background {
-  background-image: url("../img/trailer-2.jpg");
+section {
+  padding: 0;
+  margin: 0;
+  display: flex; }
+
+#home-landing {
+  height: 100vh;
+  background-image: url("../img/trailer-1.jpg");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  overflow-y: scroll; }
-  #home-background #home-background-overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3); }
-
-.home-container {
-  position: relative;
-  width: 72rem;
-  max-width: calc(100% - 4rem);
-  margin: 0 auto;
-  padding: 0;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #F1DDC5; }
-
-#home-title {
-  margin-top: 2rem;
-  padding: 0;
-  border-radius: 10px 10px 0 0; }
-  #home-title .title {
-    padding: 20px;
-    margin: 0;
-    font-size: 2em;
-    font-weight: 600;
-    letter-spacing: 4px;
-    background: linear-gradient(96deg, #F1DDC5, #948777);
-    color: black;
-    border-radius: 10px 10px 0 0; }
-
-#home-video {
-  padding: 0;
-  display: block; }
-  #home-video video {
-    width: 100%;
-    display: block; }
-  #home-video img {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 0; }
+  justify-content: center;
+  align-items: center; }
+  #home-landing #home-landing-content {
+    display: flexbox;
+    justify-content: center;
+    align-items: center; }
+    #home-landing #home-landing-content h1 {
+      font-size: 4rem;
+      padding: 10px;
+      color: #F1DDC5;
+      background: rgba(58, 53, 47, 0.6);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border-radius: 10px; }
+    #home-landing #home-landing-content a {
+      display: inline-flex;
+      margin: 20px auto;
+      font-size: 2rem; }
 
 #home-about {
-  background: linear-gradient(177deg, #F1DDC5, #948777);
-  color: black; }
-
-#home-features {
-  display: flex;
-  flex-flow: wrap;
-  background: rgba(30, 30, 30, 0.6); }
-  #home-features .home-features-left {
-    flex: 0 0 50%; }
-  #home-features .home-features-right {
-    flex: 0 0 50%; }
-  #home-features .home-features-center {
-    flex: 0 0 100%; }
-  #home-features .home-features-colored {
-    background: linear-gradient(96deg, #F1DDC5, #948777);
-    color: #323232; }
-  #home-features img {
-    display: block;
-    width: 100%; }
-
-#home-reviews {
-  background: linear-gradient(96deg, #F1DDC5, #948777);
-  color: black; }
-
-#home-contact {
-  display: flex;
-  flex-flow: wrap;
-  text-align: center; }
-  #home-contact .home-contact-section {
-    flex: 0 0 33%; }
+  background: linear-gradient(96deg, #F1DDC5, #948777); }
 
 #home-footer {
-  border-radius: 0 0 10px 10px;
-  margin-bottom: 6rem; }
-  #home-footer p {
-    margin: 0;
-    color: black;
-    background: linear-gradient(96deg, #F1DDC5, #948777);
-    border-radius: 0 0 10px 10px; }
+  background: linear-gradient(177deg, #F1DDC5, #948777); }
 
-.section-title {
-  margin: 0;
-  padding: 20px;
-  width: 100%;
-  text-align: center; }
+navbar {
+  position: fixed;
+  height: 50px;
+  background: rgba(58, 53, 47, 0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  width: 100%; }
+  navbar h1 {
+    margin: 0 10px;
+    line-height: 50px;
+    color: #F1DDC5; }
+
+.button {
+  display: flex;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  background: linear-gradient(96deg, #F1DDC5, #948777);
+  font-family: "Quicksand", sans-serif; }
+  .button:hover {
+    background: linear-gradient(177deg, #F1DDC5, #948777); }
 
 /*# sourceMappingURL=styles.css.map */
