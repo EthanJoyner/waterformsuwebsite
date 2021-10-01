@@ -1,2 +1,2 @@
-# bar
-website for a friend
+# Water For Morgan State University 
+## A website for a movement.
