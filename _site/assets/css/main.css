@@ -100,10 +100,10 @@ input, select, textarea {
 
 	body {
 		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #4979FC 15%, #42BDE3 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #4979FC 15%, #42BDE3 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #4979FC 15%, #42BDE3 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #4979FC 15%, #42BDE3 85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1957,7 +1957,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #8cc9f0;
+			background-color: #42BDE3;
 			color: #ffffff !important;
 			box-shadow: none;
 		}
@@ -2157,8 +2157,8 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #8cc9f0;
-			box-shadow: 0 0 0 1px #8cc9f0;
+			border-color: #42BDE3;
+			box-shadow: 0 0 0 1px #42BDE3;
 		}
 
 	select {
@@ -2190,8 +2190,8 @@ input, select, textarea {
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #8cc9f0;
-		box-shadow: 0 0 0 1px #8cc9f0;
+		border-color: #42BDE3;
+		box-shadow: 0 0 0 1px #42BDE3;
 	}
 
 	::-webkit-input-placeholder {
@@ -2291,7 +2291,7 @@ input, select, textarea {
 			}
 
 		.icon.style1 {
-			color: #efa8b0;
+			color: #4979FC;
 		}
 
 		.icon.style2 {
@@ -2299,7 +2299,7 @@ input, select, textarea {
 		}
 
 		.icon.style3 {
-			color: #a89cc8;
+			color: #55B8FA;
 		}
 
 		.icon.style4 {
@@ -2307,7 +2307,7 @@ input, select, textarea {
 		}
 
 		.icon.style5 {
-			color: #8cc9f0;
+			color: #42BDE3;
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -2884,7 +2884,7 @@ input, select, textarea {
 		}
 
 			.statistics li.style1 {
-				background-color: #efa8b0;
+				background-color: #4979FC;
 			}
 
 			.statistics li.style2 {
@@ -2892,7 +2892,7 @@ input, select, textarea {
 			}
 
 			.statistics li.style3 {
-				background-color: #a89cc8;
+				background-color: #55B8FA;
 			}
 
 			.statistics li.style4 {
@@ -2900,7 +2900,7 @@ input, select, textarea {
 			}
 
 			.statistics li.style5 {
-				background-color: #8cc9f0;
+				background-color: #42BDE3;
 			}
 
 			.statistics li strong, .statistics li b {
@@ -3411,7 +3411,7 @@ input, select, textarea {
 			#main input[type="button"].primary,
 			#main button.primary,
 			#main .button.primary {
-				background-color: #8cc9f0;
+				background-color: #42BDE3;
 				color: #ffffff !important;
 				box-shadow: none;
 			}
@@ -3458,8 +3458,8 @@ input, select, textarea {
 			#main input[type="email"]:focus,
 			#main select:focus,
 			#main textarea:focus {
-				border-color: #8cc9f0;
-				box-shadow: 0 0 0 1px #8cc9f0;
+				border-color: #42BDE3;
+				box-shadow: 0 0 0 1px #42BDE3;
 			}
 
 		#main select {
@@ -3491,8 +3491,8 @@ input, select, textarea {
 
 		#main input[type="checkbox"]:focus + label:before,
 		#main input[type="radio"]:focus + label:before {
-			border-color: #8cc9f0;
-			box-shadow: 0 0 0 1px #8cc9f0;
+			border-color: #42BDE3;
+			box-shadow: 0 0 0 1px #42BDE3;
 		}
 
 		#main ::-webkit-input-placeholder {
@@ -3546,10 +3546,10 @@ input, select, textarea {
 
 		#main header.major h2:after {
 			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background-image: -moz-linear-gradient(90deg, #4979FC, #55B8FA, #42BDE3);
+			background-image: -webkit-linear-gradient(90deg, #4979FC, #55B8FA, #42BDE3);
+			background-image: -ms-linear-gradient(90deg, #4979FC, #55B8FA, #42BDE3);
+			background-image: linear-gradient(90deg, #4979FC, #55B8FA, #42BDE3);
 		}
 
 		#main table tbody tr {

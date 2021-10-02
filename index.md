@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Water For MSU 
 ---
-{% include pset/index.html %}
+{% include home.html %}
 
