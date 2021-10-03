@@ -3968,3 +3968,10 @@ input, select, textarea {
 .nodec{
 	text-decoration: none;
 }
+.lookpretty{
+	background-color: #42BDE3;
+	background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #935d8c 0%, #42BDE3 100%);
+	background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg,#935d8c 0%, #42BDE3 100%);
+	background-image: url("images/overlay.png"), -ms-linear-gradient(45deg,#935d8c 0%, #42BDE3 100%);
+	background-image: url("images/overlay.png"), linear-gradient(45deg, #935d8c 0%, #42BDE3 100%);
+}
