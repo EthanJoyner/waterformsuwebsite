@@ -10,7 +10,6 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="shortcut icon" type="image/png" href="images/wfmsu-logo-white.png"/>
 		<link rel="shortcut icon" type="image/png" href="../images/wfmsu-logo-white.png"/>
-
 	</div>
 
 <div class="alligncenter menuContainer tbitpad-2 rbitpad-4 lbitpad-4">
@@ -63,6 +62,7 @@
 									</p>
 									<ul class="actions">
 										<li><a href="/about/" class="button">Learn More</a></li>
+										<li><a href="/take-action/" class="button primary">Take The Survey</a></li>
 									</ul>
 								</div>
 								<span class="image lookpretty"><img src="images/wfmsu-logo-white.png" width="50%" height="auto" /></span>
@@ -105,29 +105,28 @@
 						<section id="second" class="main special">
 							<header class="major">
 								<h2>Data Findings (Pending)</h2>
-								<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-								posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+								<p id="theDate">Last Updated: Failed</p>
 							</header>
 							<ul class="statistics">
 								<li class="style1">
-									<span class="icon solid fa-code-branch"></span>
-									<strong>5,120</strong> Etiam
+									<span class="icon solid fa-users"></span>
+									<strong id="s1">loading...</strong> Advocates
 								</li>
 								<li class="style2">
-									<span class="icon fa-folder-open"></span>
-									<strong>8,192</strong> Magna
+									<span class="icon fa-flag"></span>
+									<strong id="s2">loading...</strong> % in support
 								</li>
 								<li class="style3">
-									<span class="icon solid fa-signal"></span>
-									<strong>2,048</strong> Tempus
+									<span class="icon solid fa-tint"></span>
+									<strong id="s3">loading...</strong> % of ppl have easy access to water
 								</li>
 								<li class="style4">
-									<span class="icon solid fa-laptop"></span>
-									<strong>4,096</strong> Aliquam
+									<span class="icon solid fa-university"></span>
+									<strong id="s4">loading...</strong> Bottle Fountains on campus 
 								</li>
 								<li class="style5">
-									<span class="icon fa-gem"></span>
-									<strong>1,024</strong> Nullam
+									<span class="icon solid fa-hand-holding-usd"></span>
+									<strong id="s5">loading...</strong> Buy a drink when thirsty. 
 								</li>
 							</ul>
 							<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
@@ -155,6 +154,11 @@
 				</div>
 
 		</div>
+		<script>
+			var currentDate = new Date();
+			var dateTime = "Last Updated: " + (currentDate.getMonth()+1) + "/" + (currentDate.getDate()) + "/" + currentDate.getFullYear() + " @" + (currentDate.getUTCHours()) + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds() + " UTC";
+			document.getElementById("theDate").innerHTML = dateTime;
+ 		</script>
 </body>
 
 
@@ -164,25 +168,22 @@
 <footer id="footer">
     <section>
         <h2>Join the Team</h2>
-        <p>Currently, it is a one-person team behind all of this. My name is Ethan Joyner (Sophomore), and I fully understand that this project will not be something that I can single-handedly accomplish. So, if you have any skills that you think you can bring to the table, all are welcome from individuals, clubs, fraternities, and sororities. Send an email with "WFMSU-SUPPORT" in the title. Thank you. 
+        <p>Currently, it is a one-person team behind all of this. My name is Ethan Joyner (Sophomore), and I fully understand that this project will not be something that I can single-handedly accomplish. So, if you have any skills that you think you can bring to the table, all are welcome from individuals, clubs, fraternities, and sororities. Send an email with "WFMSU-SUPPORT" in the title or fill out the survey with the button below. <br><br> Thank you. 
         </p>
         <ul class="actions">
-            <li><a href="#" class="button">Learn More</a></li>
+            <li><a href="/join-the-team/" class="button">Join The Team</a></li>
         </ul>
     </section>
     <section>
-        <h2>Etiam feugiat</h2>
+        <h2>Location and Resources</h2>
         <dl class="alt">
             <dt>Address</dt>
-            <dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+            <dd>Morgan State University &bull; Baltimore, MD 21251 &bull; USA</dd>
             <dt>Email</dt>
             <dd><a href="#">waterformsu@gmail.com</a></dd>
         </dl>
         <ul class="icons">
-            <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+            <li><a href="https://www.instagram.com/waterformsu/" target="_blank" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
         </ul>
     </section>
 </footer>
