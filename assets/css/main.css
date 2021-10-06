@@ -3975,3 +3975,38 @@ input, select, textarea {
 	background-image: url("images/overlay.png"), -ms-linear-gradient(45deg,#935d8c 0%, #42BDE3 100%);
 	background-image: url("images/overlay.png"), linear-gradient(45deg, #935d8c 0%, #42BDE3 100%);
 }
+.blink {
+	animation: blinker 0.6s linear infinite;
+	color: #cf0f0f;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: sans-serif;
+  }
+  @keyframes blinker {
+	50% {
+	  opacity: 0;
+	}
+  }
+  .blink-one {
+	animation: blinker-one 1s linear infinite;
+  }
+  @keyframes blinker-one {
+	0% {
+	  opacity: 0;
+	}
+  }
+  .blink-two {
+	animation: blinker-two 1.4s linear infinite;
+  }
+  @keyframes blinker-two {
+	100% {
+	  opacity: 0;
+	}
+  }
+  .dot {
+	height: 25px;
+	width: 25px;
+	background-color: rgb(228, 24, 24);
+	border-radius: 50%;
+	display: inline-block;
+  }
