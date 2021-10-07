@@ -150,7 +150,7 @@
 						document.getElementById("s2").innerHTML = pulledS2 + "%";
 						document.getElementById("s3").innerHTML = pulledS3 + "%";
 						document.getElementById("s4").innerHTML = pulledS4;
-						document.getElementById("s5").innerHTML = pulledS5;
+						document.getElementById("s5").innerHTML = pulledS5 + "%";
 
 						// set the time
 						var currentDate = new Date();
@@ -161,6 +161,12 @@
 				else{
 					// ERROR
 					document.getElementById("theDate").innerHTML = "Last Updated: Failed";
+					document.getElementById("s1").innerHTML = "UNAV.";
+					document.getElementById("s2").innerHTML = "UNAV.";
+					document.getElementById("s3").innerHTML = "UNAV.";
+					document.getElementById("s4").innerHTML = "UNAV.";
+					document.getElementById("s5").innerHTML = "UNAV.";
+					
 				}
 			})
  		</script>
