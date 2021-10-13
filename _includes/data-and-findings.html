@@ -60,9 +60,9 @@
 			</div>
 	</div>
 
-	<!-- Live Data Pull Currently Disabled -->
+	<!-- Live Data Pull -->
 <script>
-	fetch("https://api.apispreadsheets.com/data/19118delete/").then(res=>{
+	fetch("https://api.apispreadsheets.com/data/19118/").then(res=>{
 		if (res.status === 200){
 			// SUCCESS
 			res.json().then(data=>{
