@@ -16,7 +16,7 @@
 <div class="alligncenter menuContainer tbitpad-2 rbitpad-4 lbitpad-4">
     <ul class="actions fit small">
         
-        <li><a href="/psa-video/" class="button fit small">Watch the Video</a></li>
+        <!-- <li><a href="/psa-video/" class="button fit small disabled">Watch the Video</a></li> -->
         <li><a href="/data-and-findings/" class="button fit small">Data and Findings</a></li>
         <li><a href="/" class="button fit small">Home</a></li>
         <li><a href="/take-action/" class="button fit small">Take Action</a></li>
@@ -40,49 +40,326 @@
 			<div id="main">
 
 				<!-- Content -->
-					<section id="content" class="main">
-						<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
-						<h2>Magna feugiat lorem</h2>
-						<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
-						<!-- Second Section -->
-						<section id="second" class="main special">
-							<header class="major">
-								<h2>Data Findings (Pending)</h2>
-								<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-								posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-							</header>
-							<ul class="statistics">
-								<li class="style1">
-									<span class="icon solid fa-code-branch"></span>
-									<strong>5,120</strong> Etiam
-								</li>
-								<li class="style2">
-									<span class="icon fa-folder-open"></span>
-									<strong>8,192</strong> Magna
-								</li>
-								<li class="style3">
-									<span class="icon solid fa-signal"></span>
-									<strong>2,048</strong> Tempus
-								</li>
-								<li class="style4">
-									<span class="icon solid fa-laptop"></span>
-									<strong>4,096</strong> Aliquam
-								</li>
-								<li class="style5">
-									<span class="icon fa-gem"></span>
-									<strong>1,024</strong> Nullam
-								</li>
-							</ul>
-							<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-							<footer class="major">
-								<ul class="actions special">
-									<li><a href="#" class="button">Click Here to View Spreadsheet Data</a></li>
-								</ul>
-							</footer>
-						</section>
-					</section>
+				<section id="second" class="main special allignCenter">
+					<header class="major">
+						<h2>Data Findings (Updated Live) <span class="blink dot "></span></h2>
+						<p id="theDate">Last Updated: Pending</p>
+					</header>
+					<ul class="statistics">
+						<li class="style1">
+							<span class="icon solid fa-users"></span>
+							
+							<strong id="s1">One sec..</strong>Advocates
+						</li>
+						<li class="style2">
+							<span class="icon fa-flag"></span>
+							<strong id="s2">One sec..</strong> In support
+						</li>
+						<li class="style3">
+							<span class="icon solid fa-tint"></span>
+							<strong id="s3">One sec..</strong> Of ppl have easy access to water
+						</li>
+						<li class="style4">
+							<span class="icon solid fa-university"></span>
+							<strong id="s4">One sec..</strong> Bottle Fountain on campus 
+						</li>
+						<li class="style5">
+							<span class="icon solid fa-hand-holding-usd"></span>
+							<strong id="s5">One sec..</strong> Have to buy a drink, rather than use a fountain 
+						</li>
+					</ul>
+					
+					<h2>Notable research on Dehydration</h2>
+					<p>A study done by The British Nutrition Journal find that there are cognitive and emotional differences between people that are hydrated and not hydrated. Here are a summary of some of their findings.  </p>
+					<p><i>Source: <a href="https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/mild-dehydration-impairs-cognitive-performance-and-mood-of-men/3388AB36B8DF73E844C9AD19271A75BF#" target="_blank">Mild dehydration impairs cognitive performance and mood of men</a></i></p>
+					<br />
+					<canvas id="myChart" style="width:90%;max-width:90%"></canvas>
+					<canvas id="myChart2" style="width:90%;max-width:90%"></canvas>
+					<canvas id="myChart3" style="width:90%;max-width:90%"></canvas>
+					<canvas id="myChart4" style="width:90%;max-width:90%"></canvas>
+					<canvas id="myChart5" style="width:90%;max-width:90%"></canvas>
+					<canvas id="myChart6" style="width:90%;max-width:90%"></canvas>
+					<canvas id="myChart7" style="width:90%;max-width:90%"></canvas>
+					<canvas id="myChart8" style="width:90%;max-width:90%"></canvas>
+					<canvas id="myChart9" style="width:90%;max-width:90%"></canvas>
+				</section>
+
+					
 			</div>
 	</div>
+
+	<!-- Live Data Pull Currently Disabled -->
+<script>
+	fetch("https://api.apispreadsheets.com/data/19118delete/").then(res=>{
+		if (res.status === 200){
+			// SUCCESS
+			res.json().then(data=>{
+				// Declare dataSet
+				const dataSet = data["data"]
+				
+				// Declare stat variables
+				var pulledS1 = dataSet[0].stat1;
+				var pulledS2 = dataSet[0].stat2;
+				var pulledS3 = dataSet[0].stat3;
+				var pulledS4 = dataSet[0].stat4;
+				var pulledS5 = dataSet[0].stat5;
+
+				// Push variables to page
+				document.getElementById("s1").innerHTML = pulledS1;
+				document.getElementById("s2").innerHTML = pulledS2 + "%";
+				document.getElementById("s3").innerHTML = pulledS3 + "%";
+				document.getElementById("s4").innerHTML = pulledS4;
+				document.getElementById("s5").innerHTML = pulledS5 + "%";
+
+				// set the time
+				var currentDate = new Date();
+	var dateTime = "Last Updated: " + (currentDate.getMonth()+1) + "/" + (currentDate.getDate()) + "/" + currentDate.getFullYear() + " @" + (currentDate.getUTCHours()) + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds() + " UTC";
+	document.getElementById("theDate").innerHTML = dateTime;
+			}).catch(err => console.log(err))
+		}
+		else{
+			// ERROR
+			document.getElementById("theDate").innerHTML = "Last Updated: Failed";
+			document.getElementById("s1").innerHTML = "UNAV.";
+			document.getElementById("s2").innerHTML = "UNAV.";
+			document.getElementById("s3").innerHTML = "UNAV.";
+			document.getElementById("s4").innerHTML = "UNAV.";
+			document.getElementById("s5").innerHTML = "UNAV.";
+			
+		}
+	})
+ </script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	
+
+<!-- BAR GRAPHS -->
+
+<!-- Severity of Reported Headaches on a scale from 0 - 1 -->
+	<script>
+	var xValues = ["Hydrated", "Dehydrated"];
+	var yValues = [0.9, 1.7, 0, 2];
+	var barColors = ["#c79cc8", "#9bb2e1"];
+	
+	new Chart("myChart", {
+	  type: "bar",
+	  data: {
+		labels: xValues,
+		datasets: [{
+		  backgroundColor: barColors,
+		  data: yValues
+		}]
+	  },
+	  options: {
+		legend: {display: false},
+		title: {
+		  display: true,
+		  text: "Average Severity of Reported Headaches on a Scale From 0 - 1"
+		}
+	  }
+	});
+	</script>
+
+
+<!-- Group: Visual -->
+<!-- Correct Responses -->
+<script>
+	var xValues = ["Hydrated", "Dehydrated"];
+	var yValues = [15.4, 15.1, 15, 16];
+	var barColors = ["#c79cc8", "#9bb2e1"];
+	
+	new Chart("myChart2", {
+	  type: "bar",
+	  data: {
+		labels: xValues,
+		datasets: [{
+		  backgroundColor: barColors,
+		  data: yValues
+		}]
+	  },
+	  options: {
+		legend: {display: false},
+		title: {
+		  display: true,
+		  text: " Average # Of Correct Responses on a Visual Test"
+		}
+	  }
+	});
+	</script>
+<!-- Reaction Times -->
+<script>
+	var xValues = ["Hydrated", "Dehydrated"];
+	var yValues = [.93, .98, .8, 1];
+	var barColors = ["#c79cc8", "#9bb2e1"];
+	
+	new Chart("myChart3", {
+	  type: "bar",
+	  data: {
+		labels: xValues,
+		datasets: [{
+		  backgroundColor: barColors,
+		  data: yValues
+		}]
+	  },
+	  options: {
+		legend: {display: false},
+		title: {
+		  display: true,
+		  text: "Average Reaction Times on Visual Test (seconds)"
+		}
+	  }
+	});
+	</script>
+
+
+<!-- Group: Profile of mood states -->
+<!-- Tension/anxiety -->
+<script>
+	var xValues = ["Hydrated", "Dehydrated"];
+	var yValues = [8.7, 9.7, 8, 10];
+	var barColors = ["#c79cc8", "#9bb2e1"];
+	
+	new Chart("myChart4", {
+	  type: "bar",
+	  data: {
+		labels: xValues,
+		datasets: [{
+		  backgroundColor: barColors,
+		  data: yValues
+		}]
+	  },
+	  options: {
+		legend: {display: false},
+		title: {
+		  display: true,
+		  text: "Average Ratings of anxiety on a Scale From 1 - 100 "
+		}
+	  }
+	});
+	</script>
+<!-- Depression -->
+<script>
+	var xValues = ["Hydrated", "Dehydrated"];
+	var yValues = [18.6, 18.7, 18, 19];
+	var barColors = ["#c79cc8", "#9bb2e1"];
+	
+	new Chart("myChart5", {
+	  type: "bar",
+	  data: {
+		labels: xValues,
+		datasets: [{
+		  backgroundColor: barColors,
+		  data: yValues
+		}]
+	  },
+	  options: {
+		legend: {display: false},
+		title: {
+		  display: true,
+		  text: "Average Ratings of Depression on a Scale From 1 - 100"
+		}
+	  }
+	});
+	</script>
+<!-- Correct Grammatical Answers -->
+<script>
+	var xValues = ["Hydrated", "Dehydrated"];
+	var yValues = [29.6, 29.3, 29, 30];
+	var barColors = ["#c79cc8", "#9bb2e1"];
+	
+	new Chart("myChart6", {
+	  type: "bar",
+	  data: {
+		labels: xValues,
+		datasets: [{
+		  backgroundColor: barColors,
+		  data: yValues
+		}]
+	  },
+	  options: {
+		legend: {display: false},
+		title: {
+		  display: true,
+		  text: "Correct Answers on Grammar Test "
+		}
+	  }
+	});
+	</script>
+<!-- Fatigue -->
+<script>
+	var xValues = ["Hydrated", "Dehydrated"];
+	var yValues = [13, 14.5, 12, 15];
+	var barColors = ["#c79cc8", "#9bb2e1"];
+	
+	new Chart("myChart7", {
+	  type: "bar",
+	  data: {
+		labels: xValues,
+		datasets: [{
+		  backgroundColor: barColors,
+		  data: yValues
+		}]
+	  },
+	  options: {
+		legend: {display: false},
+		title: {
+		  display: true,
+		  text: "Average Ratings of Fatigue on a Scale From 1 - 100"
+		}
+	  }
+	});
+	</script>
+<!-- Confusion/bewilderment -->
+<script>
+	var xValues = ["Hydrated", "Dehydrated"];
+	var yValues = [6.4, 6.8, 6, 7];
+	var barColors = ["#c79cc8", "#9bb2e1"];
+	
+	new Chart("myChart8", {
+	  type: "bar",
+	  data: {
+		labels: xValues,
+		datasets: [{
+		  backgroundColor: barColors,
+		  data: yValues
+		}]
+	  },
+	  options: {
+		legend: {display: false},
+		title: {
+		  display: true,
+		  text: "Average Ratings of Confusion on a Scale From 1 - 100"
+		}
+	  }
+	});
+	</script>
+<!-- Total mood disturbance  -->
+<script>
+	var xValues = ["Hydrated", "Dehydrated"];
+	var yValues = [44.6, 48.1, 44, 49];
+	var barColors = ["#c79cc8", "#9bb2e1"];
+	
+	new Chart("myChart9", {
+	  type: "bar",
+	  data: {
+		labels: xValues,
+		datasets: [{
+		  backgroundColor: barColors,
+		  data: yValues
+		}]
+	  },
+	  options: {
+		legend: {display: false},
+		title: {
+		  display: true,
+		  text: "Average Ratings of Total Mood Disturbance on a Scale From 1 - 100"
+		}
+	  }
+	});
+	</script>
+
+
+
 </div>
 
 
@@ -103,7 +380,7 @@
             <dt>Address</dt>
             <dd>Morgan State University &bull; Baltimore, MD 21251 &bull; USA</dd>
             <dt>Email</dt>
-            <dd><a href="#">waterformsu@gmail.com</a></dd>
+            <dd><a href="mailto: waterformsu@gmail.com">waterformsu@gmail.com</a></dd>
         </dl>
         <ul class="icons">
             <li><a href="https://www.instagram.com/waterformsu/" target="_blank" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
